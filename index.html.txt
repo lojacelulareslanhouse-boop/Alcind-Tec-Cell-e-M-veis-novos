@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ALCIND TEC CELL E MÓVEIS - Acessórios, Eletrônicos e Móveis</title>
+<meta name="description" content="ALCIND TEC CELL E MÓVEIS - Acessórios para celular, eletrônicos, móveis. Varejo e atacado. WhatsApp 51 99878-5137">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--amarelo:#FFD500;--preto:#111}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',sans-serif;background:#fff;color:#111}
+h1,h2{font-family:'Montserrat',sans-serif}
+header{background:var(--preto);color:var(--amarelo);padding:18px 20px;text-align:center;position:sticky;top:0;z-index:10}
+header h1{font-size:clamp(22px,5vw,36px);font-weight:900}
+header p{color:#fff;font-size:12px;margin-top:6px}
+.hero{background:var(--amarelo);padding:28px 20px;text-align:center}
+.hero h2{font-size:clamp(20px,4.5vw,32px);font-weight:900;text-transform:uppercase}
+.btn-wa{display:inline-block;margin-top:16px;background:#25D366;color:#fff;padding:14px 26px;border-radius:30px;font-weight:800;text-decoration:none;font-size:18px}
+.cats{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;padding:18px;border-bottom:2px solid #eee}
+.cats button{border:2px solid #111;background:#fff;padding:10px 18px;border-radius:20px;font-weight:700;cursor:pointer}
+.cats button.active,.cats button:hover{background:var(--amarelo)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:14px;padding:20px;max-width:1200px;margin:0 auto}
+.card{border:2px solid #111;border-radius:12px;overflow:hidden;background:#fff;text-align:center;transition:.2s}
+.card:hover{transform:translateY(-3px);box-shadow:0 8px 20px rgba(0,0,0,.15)}
+.card img{width:100%;height:140px;object-fit:cover}
+.card h3{font-size:13px;padding:10px 6px;background:#111;color:var(--amarelo);min-height:48px;display:flex;align-items:center;justify-content:center}
+footer{background:var(--preto);color:#fff;text-align:center;padding:30px 20px;margin-top:30px}
+.whats-float{position:fixed;bottom:20px;right:20px;background:#25D366;width:62px;height:62px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:32px;color:#fff;text-decoration:none;box-shadow:0 6px 18px rgba(0,0,0,.3);z-index:99}
+@media(max-width:600px){.grid{grid-template-columns:repeat(2,1fr)}}
+</style>
+</head>
+<body>
+<header>
+<h1>ALCIND TEC CELL E MÓVEIS</h1>
+<p>ACESSÓRIOS PARA CELULAR - ELETRÔNICOS DE TODOS OS TIPOS - MÓVEIS DE TODOS OS TIPOS - VAREJO E ATACADO</p>
+</header>
+<div class="hero">
+<h2>Móveis, Eletrônicos e Acessórios na Promoção</h2>
+<p>Preços de Atacado Disponíveis • Entregamos em toda a região • WhatsApp: (51) 99878-5137</p>
+<a class="btn-wa" href="https://wa.me/5551998785137?text=Ola%20ALCIND%20TEC%20CELL%20E%20MOVEIS!%20Vi%20seu%20site%20e%20quero%20o%20catalogo" target="_blank">📱 Chamar no WhatsApp</a>
+</div>
+<div class="cats">
+<button class="active" data-cat="todos">Todos</button>
+<button data-cat="moveis">Móveis</button>
+<button data-cat="eletronicos">Eletrônicos</button>
+<button data-cat="acessorios">Capas e Películas</button>
+</div>
+<div class="grid" id="grid"></div>
+<footer>
+<h3 style="color:#FFD500">ALCIND TEC CELL E MÓVEIS</h3>
+<p>Vendas no varejo e atacado • WhatsApp (51) 99878-5137</p>
+<p style="margin-top:8px;font-size:12px;color:#aaa">Site oficial no ar pelo GitHub Pages</p>
+</footer>
+<a class="whats-float" href="https://wa.me/5551998785137" target="_blank">💬</a>
+<script>
+const produtos=[
+{n:"Cadeira Gamer",c:"moveis",i:"https://images.unsplash.com/photo-1598550476439-6847785fcea6?w=400"},
+{n:"Cadeira Escritório",c:"moveis",i:"https://images.unsplash.com/photo-1580480055273-228ff5388ef8?w=400"},
+{n:"Mesa Escritório",c:"moveis",i:"https://images.unsplash.com/photo-1518455027359-f3f8164ba6bd?w=400"},
+{n:"Rack TV",c:"moveis",i:"https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400"},
+{n:"Guarda-Roupas",c:"moveis",i:"https://images.unsplash.com/photo-1558997519-83ea9252edf8?w=400"},
+{n:"Cama Box Casal",c:"moveis",i:"https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=400"},
+{n:"Cama Baú Solteiro",c:"moveis",i:"https://images.unsplash.com/photo-1616594039964-ae9021a400a0?w=400"},
+{n:"Cama Baú Casal",c:"moveis",i:"https://images.unsplash.com/photo-1616594039964-ae9021a400a0?w=400"},
+{n:"Poltrona",c:"moveis",i:"https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=400"},
+{n:"Sofá de Canto",c:"moveis",i:"https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=400"},
+{n:"Cozinha Completa",c:"moveis",i:"https://images.unsplash.com/photo-1556911220-bff31c812dba?w=400"},
+{n:"Colchão Solteiro",c:"moveis",i:"https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=400"},
+{n:"Colchão Casal",c:"moveis",i:"https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=400"},
+{n:"Cabeceira Solteiro",c:"moveis",i:"https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=400"},
+{n:"Cabeceira Casal",c:"moveis",i:"https://images.unsplash.com/photo-1616594039964-ae9021a400a0?w=400"},
+{n:"Mesa de Jantar",c:"moveis",i:"https://images.unsplash.com/photo-1615066028049-d06a38e9d092?w=400"},
+{n:"Estante",c:"moveis",i:"https://images.unsplash.com/photo-1594026112284-02bb6f3352fe?w=400"},
+{n:"Cômoda",c:"moveis",i:"https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400"},
+{n:"Criado Mudo",c:"moveis",i:"https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=400"},
+{n:"Painel TV",c:"moveis",i:"https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400"},
+{n:"Puff",c:"moveis",i:"https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=400"},
+{n:"Radio Retrô / Portátil",c:"eletronicos",i:"https://images.unsplash.com/photo-1494232410401-ad00d5433cfa?w=400"},
+{n:"Capas Todos Modelos",c:"acessorios",i:"https://images.unsplash.com/photo-1605236453806-6ff36851218e?w=400"},
+{n:"Películas Todos Modelos",c:"acessorios",i:"https://images.unsplash.com/photo-1585060544812-6b45742d762f?w=400"},
+];
+function render(cat){
+const g=document.getElementById('grid');g.innerHTML='';
+const lista=cat==='todos'?produtos:produtos.filter(p=>p.c===cat);
+lista.forEach(p=>{g.innerHTML+=`<div class="card"><img src="${p.i}" alt="${p.n}"><h3>${p.n}</h3></div>`});
+}
+render('todos');
+document.querySelectorAll('.cats button').forEach(b=>{b.addEventListener('click',()=>{document.querySelectorAll('.cats button').forEach(x=>x.classList.remove('active'));b.classList.add('active');render(b.dataset.cat);})});
+</script>
+</body>
+</html>
