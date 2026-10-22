@@ -106,8 +106,7 @@ function f(cat,btn){
 document.querySelectorAll('.filters button').forEach(b=>b.classList.remove('active'));
 btn.classList.add('active');
 document.querySelectorAll('.card').forEach(c=>{c.style.display=(cat==='todos'||c.dataset.cat===cat)?'block':'none';});
-document.querySelectorAll('.propaganda').forEach(p=>{p.style.display=(cat==='todos'|?'block':'none';});
-}
+document.querySelectorAll('.propaganda').forEach(p=>{p.style.display=(cat==='todos')?'block':'none';});
 </script>
 </body>
 </html>
