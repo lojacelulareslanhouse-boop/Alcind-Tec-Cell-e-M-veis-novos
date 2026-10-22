@@ -11,52 +11,77 @@ body{background:#f2f2f2}
 .header h1{color:#ff9f1c;font-size:20px}
 .banner{background:linear-gradient(90deg,#ff7b00,#ffb347);padding:18px;text-align:center}
 .btn-whats{background:#25D366;color:#fff;padding:12px 24px;border-radius:30px;text-decoration:none;display:inline-block;font-weight:bold;margin-top:10px}
-.filters{display:flex;gap:8px;justify-content:center;padding:14px;background:#fff;flex-wrap:wrap;position:sticky;top:0;z-index:20}
-.filters button{padding:8px 16px;border:1.5px solid #ff9f1c;border-radius:20px;background:#fff;cursor:pointer;font-weight:bold;font-size:12px}
+.propaganda{background:#fff;margin:14px;border-radius:12px;padding:16px;box-shadow:0 2px 8px rgba(0,0,0,.08);border-left:5px solid #ff9f1c}
+.propaganda h2{color:#101828;font-size:16px;margin-bottom:8px}
+.propaganda .editavel{background:#fffbe6;padding:12px;border-radius:8px;border:1px dashed #ff9f1c;margin:8px 0;font-size:13px}
+.video-box{background:#000;border-radius:10px;height:200px;display:flex;align-items:center;justify-content:center;color:#fff;margin-top:10px;position:relative;overflow:hidden}
+.filters{display:flex;gap:6px;justify-content:center;padding:12px;background:#fff;flex-wrap:wrap;position:sticky;top:0;z-index:20}
+.filters button{padding:7px 12px;border:1.5px solid #ff9f1c;border-radius:20px;background:#fff;cursor:pointer;font-weight:bold;font-size:11px}
 .filters button.active{background:#ff9f1c;color:#fff}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:12px;padding:14px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px;padding:14px}
 .card{background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,.08);position:relative}
-.card img{width:100%;height:190px;object-fit:cover}
-.card-info{padding:10px}
-.price{color:#d00000;font-weight:900;font-size:16px;margin:5px 0}
-.btn{display:block;width:100%;background:#ff9f1c;color:#101828;padding:9px;border-radius:7px;font-weight:800;text-decoration:none;text-align:center;font-size:12px;margin-top:6px}
-.badge{position:absolute;top:0;left:0;background:#d00000;color:#fff;padding:4px 9px;font-size:10px;font-weight:bold;border-radius:0 0 8px 0}
-.badge.green{background:#25D366} .badge.blue{background:#0077b6}
-.service{background:#101828;color:#fff;border-radius:12px;padding:15px;text-align:center}
-.service .icon{font-size:32px} .service h3{color:#ff9f1c;font-size:14px;margin:6px 0} .service p{font-size:11px;opacity:0.9}
+.card img{width:100%;height:160px;object-fit:cover}
+.card-info{padding:8px}
+.price{color:#d00000;font-weight:900;font-size:15px}
+.btn{display:block;width:100%;background:#ff9f1c;color:#101828;padding:8px;border-radius:7px;font-weight:800;text-decoration:none;text-align:center;font-size:11px;margin-top:5px}
+.badge{position:absolute;top:0;left:0;color:#fff;padding:3px 8px;font-size:9px;font-weight:bold;border-radius:0 0 8px 0}
+.badge.red{background:#d00000} .badge.green{background:#25D366} .badge.blue{background:#0077b6} .badge.purple{background:#7b2ff7} .badge.orange{background:#ff7b00}
+.service{background:#101828;color:#fff;border-radius:12px;padding:14px;text-align:center}
+.service .icon{font-size:28px} .service h3{color:#ff9f1c;font-size:13px;margin:5px 0} .service p{font-size:10px;opacity:0.9}
 </style>
 </head>
 <body>
 <div class="header"><h1>ALCIND TEC CELL E MÓVEIS</h1><p>Av Protásio Alves 1073 - POA | (51) 99878-5137</p></div>
-<div class="banner"><h2>📱 CAPINHAS • PELÍCULAS • MÓVEIS • ELETRÔNICOS • SERVIÇOS</h2><a class="btn-whats" href="https://wa.me/5551998785137">💬 Chamar no WhatsApp</a></div>
+<div class="banner"><h2>📱 MÓVEIS • CAPAS • ELETRÔNICOS • ACESSÓRIOS • SERVIÇOS</h2><a class="btn-whats" href="https://wa.me/5551998785137">💬 WhatsApp</a></div>
+
+<div class="propaganda">
+<h2>🔥 OFERTA DA SEMANA - MUDE ESSE TEXTO</h2>
+<div class="editavel">
+<b>✏️ SEU TEXTO DE PROPAGANDA AQUI:</b><br>
+PROMOÇÃO CHIP CLARO 4G - R$ 10,00 COM RECARGA! VALIDO ATE DOMINGO!<br>
+ALBUM DE FOTOS 10x15 COM 50% DESCONTO!<br>
+</div>
+<div class="editavel" style="background:#e6f7ff;border-color:#0077b6">
+<b>🎥 SEU VIDEO AQUI - TROQUE O LINK DO YOUTUBE</b>
+</div>
+<div class="video-box">
+<iframe width="100%" height="200" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%"></iframe>
+</div>
+</div>
+
 <div class="filters">
 <button class="active" onclick="f('todos',this)">Todos</button>
 <button onclick="f('moveis',this)">Móveis</button>
-<button onclick="f('capas',this)">Capas e Películas</button>
+<button onclick="f('capas',this)">Capas</button>
 <button onclick="f('eletronicos',this)">Eletrônicos</button>
+<button onclick="f('acessorios',this)" style="border-color:#7b2ff7;color:#7b2ff7">🎁 Acessórios</button>
 <button onclick="f('servicos',this)" style="background:#101828;color:#ff9f1c">🔧 Serviços</button>
 </div>
-<div class="grid">
-<div class="card" data-cat="moveis"><span class="badge">OFERTA</span><img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400"><div class="card-info"><h3>Poltrona Curinga Laranja</h3><div class="price">R$ 399,00</div><a class="btn" href="https://wa.me/5551998785137?text=Poltrona">Pedir</a></div></div>
-<div class="card" data-cat="moveis"><span class="badge blue">NOVO</span><img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=400"><div class="card-info"><h3>Cama Casal Madeira Maciça</h3><div class="price">R$ 899,00</div><a class="btn" href="https://wa.me/5551998785137?text=Cama">Pedir</a></div></div>
+<div class="grid"><div class="card" data-cat="moveis"><span class="badge red">OFERTA</span><img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400"><div class="card-info"><h3>Poltrona Curinga Laranja</h3><div class="price">R$ 399,00</div><a class="btn" href="https://wa.me/5551998785137?text=Poltrona">Pedir</a></div></div>
+<div class="card" data-cat="moveis"><span class="badge blue">NOVO</span><img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=400"><div class="card-info"><h3>Cama Casal Madeira</h3><div class="price">R$ 899,00</div><a class="btn" href="https://wa.me/5551998785137?text=Cama">Pedir</a></div></div>
 <div class="card" data-cat="capas"><span class="badge green">MAIS VENDIDO</span><img src="https://images.unsplash.com/photo-1605236453806-6ff36851218e?w=400"><div class="card-info"><h3>Película 3D Full Cover</h3><div class="price">R$ 20,00</div><a class="btn" href="https://wa.me/5551998785137?text=Pelicula">Pedir</a></div></div>
-<div class="card" data-cat="capas"><span class="badge">NOVO</span><img src="https://images.unsplash.com/photo-1592899677977-9bb10ba128a5?w=400"><div class="card-info"><h3>Capinha Space G14 Premium</h3><div class="price">R$ 35,00</div><a class="btn" href="https://wa.me/5551998785137?text=Space">Pedir</a></div></div>
-<div class="card" data-cat="capas"><span class="badge">NOVO</span><img src="https://images.unsplash.com/photo-1605236453806-6ff36851218e?w=400"><div class="card-info"><h3>Capinha Silicone Apple</h3><div class="price">R$ 30,00</div><a class="btn" href="https://wa.me/5551998785137?text=Rosa">Pedir</a></div></div>
+<div class="card" data-cat="capas"><span class="badge orange">NOVO</span><img src="https://images.unsplash.com/photo-1592899677977-9bb10ba128a5?w=400"><div class="card-info"><h3>Capinha Space G14</h3><div class="price">R$ 35,00</div><a class="btn" href="https://wa.me/5551998785137?text=Capinha">Pedir</a></div></div>
 <div class="card" data-cat="eletronicos"><span class="badge blue">ELETRÔNICOS</span><img src="https://images.unsplash.com/photo-1572569511254-d8f925fe2cbb?w=400"><div class="card-info"><h3>Fone Bluetooth TWS</h3><div class="price">R$ 49,90</div><a class="btn" href="https://wa.me/5551998785137?text=Fone">Pedir</a></div></div>
-<div class="card" data-cat="eletronicos"><span class="badge blue">ELETRÔNICOS</span><img src="https://images.unsplash.com/photo-1525598912003-663126343e1f?w=400"><div class="card-info"><h3>Carregador Turbo 20W</h3><div class="price">R$ 39,90</div><a class="btn" href="https://wa.me/5551998785137?text=Carregador">Pedir</a></div></div>
-<div class="card service" data-cat="servicos"><div class="icon">💻</div><h3>LAN HOUSE</h3><p>Acesso rápido e jogos</p><a class="btn" style="background:#25D366;color:#fff" href="https://wa.me/5551998785137?text=Lan%20House">Consultar</a></div>
-<div class="card service" data-cat="servicos"><div class="icon">📱</div><h3>MANUTENÇÃO CELULAR</h3><p>Tela, bateria, conector</p><a class="btn" style="background:#25D366;color:#fff" href="https://wa.me/5551998785137?text=Celular">Consultar</a></div>
-<div class="card service" data-cat="servicos"><div class="icon">🖥️</div><h3>PC E NOTEBOOK</h3><p>Formatação e upgrade</p><a class="btn" style="background:#25D366;color:#fff" href="https://wa.me/5551998785137?text=PC">Consultar</a></div>
+<div class="card" data-cat="acessorios"><span class="badge purple">ACESSÓRIO</span><img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=400"><div class="card-info"><h3>Chip Claro / Vivo / Oi - 4G</h3><div class="price">R$ 15,00</div><a class="btn" href="https://wa.me/5551998785137?text=Chip">Pedir</a></div></div>
+<div class="card" data-cat="acessorios"><span class="badge purple">ACESSÓRIO</span><img src="https://images.unsplash.com/photo-1544816155-12df9643f363?w=400"><div class="card-info"><h3>Álbum de Fotos 10x15</h3><div class="price">R$ 29,90</div><a class="btn" href="https://wa.me/5551998785137?text=Album">Pedir</a></div></div>
+<div class="card" data-cat="acessorios"><span class="badge purple">ACESSÓRIO</span><img src="https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?w=400"><div class="card-info"><h3>Quadro Porta Retrato</h3><div class="price">R$ 19,90</div><a class="btn" href="https://wa.me/5551998785137?text=Quadro">Pedir</a></div></div>
+<div class="card" data-cat="acessorios"><span class="badge purple">ACESSÓRIO</span><img src="https://images.unsplash.com/photo-1583484963886-cfe2bff2945f?w=400"><div class="card-info"><h3>Canetas, Lápis, Folha Ofício</h3><div class="price">A partir R$ 2,00</div><a class="btn" href="https://wa.me/5551998785137?text=Papelaria">Pedir</a></div></div>
+<div class="card" data-cat="acessorios"><span class="badge purple">ACESSÓRIO</span><img src="https://images.unsplash.com/photo-1584467735871-8e85353a5a26?w=400"><div class="card-info"><h3>Corta Unhas / Kit Manicure</h3><div class="price">R$ 12,00</div><a class="btn" href="https://wa.me/5551998785137?text=Corta%20Unhas">Pedir</a></div></div>
+<div class="card" data-cat="acessorios"><span class="badge purple">ACESSÓRIO</span><img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=400"><div class="card-info"><h3>Sacolas / Embalagens</h3><div class="price">A partir R$ 3,00</div><a class="btn" href="https://wa.me/5551998785137?text=Sacolas">Pedir</a></div></div>
+<div class="card" data-cat="acessorios"><span class="badge purple">ACESSÓRIO</span><img src="https://images.unsplash.com/photo-1581783342308-f792dbdd27c5?w=400"><div class="card-info"><h3>Porta Chaves / Chaveiros</h3><div class="price">R$ 8,00</div><a class="btn" href="https://wa.me/5551998785137?text=Chaveiro">Pedir</a></div></div><div class="card service" data-cat="servicos"><div class="icon">💻</div><h3>LAN HOUSE</h3><p>Acesso rápido e jogos</p><a class="btn" style="background:#25D366;color:#fff" href="https://wa.me/5551998785137?text=Lan">Consultar</a></div>
+<div class="card service" data-cat="servicos"><div class="icon">📱</div><h3>MANUTENÇÃO CELULAR</h3><p>Tela, bateria</p><a class="btn" style="background:#25D366;color:#fff" href="https://wa.me/5551998785137?text=Celular">Consultar</a></div>
+<div class="card service" data-cat="servicos"><div class="icon">🖥️</div><h3>PC E NOTEBOOK</h3><p>Formatação</p><a class="btn" style="background:#25D366;color:#fff" href="https://wa.me/5551998785137?text=PC">Consultar</a></div>
+<div class="card service" data-cat="servicos"><div class="icon">📸</div><h3>REVELAÇÃO DE FOTOS</h3><p>3x4, 10x15, 20x30</p><a class="btn" style="background:#25D366;color:#fff" href="https://wa.me/5551998785137?text=Revelacao">Consultar</a></div>
 <div class="card service" data-cat="servicos"><div class="icon">🖨️</div><h3>XEROX E IMPRESSÕES</h3><p>Colorido e PB</p><a class="btn" style="background:#25D366;color:#fff" href="https://wa.me/5551998785137?text=Xerox">Consultar</a></div>
-<div class="card service" data-cat="servicos"><div class="icon">📄</div><h3>SCANNER</h3><p>Digitalização em PDF</p><a class="btn" style="background:#25D366;color:#fff" href="https://wa.me/5551998785137?text=Scanner">Consultar</a></div>
-<div class="card service" data-cat="servicos"><div class="icon">📸</div><h3>REVELAÇÃO DE FOTOS</h3><p>3x4, 10x15, 20x30, álbuns</p><a class="btn" style="background:#25D366;color:#fff" href="https://wa.me/5551998785137?text=Revelacao%20Fotos">Consultar</a></div>
-<div class="card service" data-cat="servicos"><div class="icon">📹</div><h3>CÂMERAS SEGURANÇA</h3><p>Instalação CFTV</p><a class="btn" style="background:#25D366;color:#fff" href="https://wa.me/5551998785137?text=Cameras">Orçamento Grátis</a></div>
+<div class="card service" data-cat="servicos"><div class="icon">📄</div><h3>SCANNER</h3><p>PDF</p><a class="btn" style="background:#25D366;color:#fff" href="https://wa.me/5551998785137?text=Scanner">Consultar</a></div>
+<div class="card service" data-cat="servicos"><div class="icon">📹</div><h3>CÂMERAS SEGURANÇA</h3><p>CFTV</p><a class="btn" style="background:#25D366;color:#fff" href="https://wa.me/5551998785137?text=Camera">Orçamento</a></div>
 </div>
 <script>
 function f(cat,btn){
 document.querySelectorAll('.filters button').forEach(b=>b.classList.remove('active'));
 btn.classList.add('active');
 document.querySelectorAll('.card').forEach(c=>{c.style.display=(cat==='todos'||c.dataset.cat===cat)?'block':'none';});
+document.querySelectorAll('.propaganda').forEach(p=>{p.style.display=(cat==='todos'||cat==='acessorios')?'block':'none';});
 }
 </script>
 </body>
